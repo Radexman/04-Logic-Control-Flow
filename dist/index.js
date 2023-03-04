@@ -306,28 +306,82 @@
 // c = 0 ?? 30;
 
 // console.log(c);
-console;
-console.log(10 < 20 && 30 > 15 && 40 > 30);
-console.log(10 > 20 || 30 > 15);
+// console.log(10 < 20 && 30 > 15 && 40 > 30);
+// console.log(10 > 20 || 30 > 15);
 
-let x;
-x = 10 && 20;
-x = 10 && 20 && 30;
-x = 10 && false && 30;
+// let x;
+// x = 10 && 20;
+// x = 10 && 20 && 30;
+// x = 10 && false && 30;
 
-console.log(x);
+// console.log(x);
 
-let y;
-y = 10 || 20;
-y = 0 || 20;
-y = false || null || 30;
+// let y;
+// y = 10 || 20;
+// y = 0 || 20;
+// y = false || null || 30;
 
-console.log(y);
+// console.log(y);
+
+// let c;
+// c = 10 ?? 20;
+// c = null ?? 20;
+// c = undefined ?? 20;
+// c = null ?? 0 ?? 20;
+
+// console.log(c);
+
+// ===== 07 Logical Assingments ===== //
+
+// ||= assigns the right side value if the left is a falsy value.
+
+// let a = null;
+
+// if (!a) {
+// 	a = 10;
+// }
+
+// a = a || 10;
+
+// a ||= 10;
+
+// console.log(a);
+
+// &&= assigns the right side value only if the left is a truthy value.
+
+// let b = 10;
+
+// if (b) {
+// 	b = 20;
+// }
+
+// b = b && 20;
+
+// b &&= 20;
+
+// console.log(b);
+
+// ??= assigns the right sde value only if the left is null or undefined.
+
+// let c = null;
+
+// if (c === null || c === undefined) {
+// 	c = 20;
+// }
+
+// c = c ?? 20;
+// c ??= 20;
+
+// console.log(c);
+
+let a = null;
+a ||= 10;
+console.log(a);
+
+let b = 10;
+b &&= 20;
+console.log(b);
 
 let c;
-c = 10 ?? 20;
-c = null ?? 20;
-c = undefined ?? 20;
-c = null ?? 0 ?? 20;
-
+c ??= 30;
 console.log(c);
