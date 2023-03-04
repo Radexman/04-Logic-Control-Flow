@@ -374,14 +374,81 @@
 
 // console.log(c);
 
-let a = null;
-a ||= 10;
-console.log(a);
+// let a = null;
+// a ||= 10;
+// console.log(a);
 
-let b = 10;
-b &&= 20;
-console.log(b);
+// let b = 10;
+// b &&= 20;
+// console.log(b);
 
-let c;
-c ??= 30;
-console.log(c);
+// let c;
+// c ??= 30;
+// console.log(c);
+
+// ===== 08 Ternary Operator ===== //
+
+// const age = 23;
+
+// Using an if statement
+// if (age >= 18) {
+// 	console.log('You can vote');
+// } else {
+// 	console.log("You can't vote");
+// }
+
+// age >= 18 ? console.log('You can vote') : console.log('You can not vote');
+
+// Assigning a conditional value to a variable
+// const canVote = age >= 18 ? true : false;
+// const canVote2 = age >= 18 ? 'You can vote!' : 'You can not vote!';
+
+// console.log(canVote);
+// console.log(canVote2);
+
+// Multiple statements
+
+// const auth = true;
+// let redirect;
+
+// if (auth) {
+// 	alert('Welcome to the dashboard');
+// 	redirect = '/dashboard';
+// } else {
+// 	alert('Acces denied');
+// 	redirect = '/login';
+// }
+
+// const redirect = auth ? (alert('Welcome to the dashboard'), '/dashboard') : (alert('Acces deneid'), '/login');
+
+// console.log(redirect);
+
+// auth ? console.log('Welcome to the dashboard') : null;
+
+// auth && console.log('Welcome to the dashboard');
+const age = 19;
+
+// if (age >= 18) {
+//     console.log('You can drive a car');
+// } else {
+//     console.log('You can not drive a car');
+// }
+
+// age >= 18 ? console.log('You can drive a car') : console.log('You can not drive a car');
+
+// const canDrive = age >= 18 ? 'You can drive a car' : 'You can not drive a car';
+// console.log(canDrive);
+
+// const auth = false;
+
+// const redirect = auth ? (alert('Welcome to dashboard'), '/dashboard') : (alerd('Access Denied'), '/login');
+
+// console.log(redirect);
+
+// const canDrink = age >= 21 ? 'You can drink' : age >= 18 ? 'You can have 1 beer' : 'You can not drink';
+
+// console.log(canDrink);
+
+// auth ? console.log('Welcome to the dashboard') : null;
+
+// auth && console.log('Welcome to the dashboard');
