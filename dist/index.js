@@ -228,42 +228,106 @@
 // console.log('' === 0)
 // console.log(null === undefined)
 
-const email = 'Borderlandsmaniak@gmail.com';
+// const email = 'Borderlandsmaniak@gmail.com';
 
-if (email) {
-	console.log('You passed an email');
-} else {
-	console.log('Please enter email');
-}
+// if (email) {
+// 	console.log('You passed an email');
+// } else {
+// 	console.log('Please enter email');
+// }
 
-const name = 'Radek';
+// const name = 'Radek';
 
-console.log(!!name);
+// console.log(!!name);
 
-const x = 'false';
+// const x = 'false';
 
-if (x) {
-	console.log('This is truthy');
-} else {
-	console.log('This is falsy');
-}
+// if (x) {
+// 	console.log('This is truthy');
+// } else {
+// 	console.log('This is falsy');
+// }
 
-let children = 0;
+// let children = 0;
 
-if (!isNaN(children)) {
-	console.log(`You have ${children} children`);
-} else {
-	console.log('Please enter the number of children you have');
-}
+// if (!isNaN(children)) {
+// 	console.log(`You have ${children} children`);
+// } else {
+// 	console.log('Please enter the number of children you have');
+// }
 
-const arr = [];
+// const arr = [];
 
-if (arr.length === 0) {
-	console.log('This array is empty');
-}
+// if (arr.length === 0) {
+// 	console.log('This array is empty');
+// }
 
-const obj = {};
+// const obj = {};
 
-if (Object.keys(obj).length === 0) {
-	console.log('This object is empty');
-}
+// if (Object.keys(obj).length === 0) {
+// 	console.log('This object is empty');
+// }
+
+// ===== 06 Logical Operators ===== //
+
+// console.log(21 > 20 && 30 > 15 && 40 > 30);
+// console.log(10 > 20 || 30 < 15);
+
+// && - Will return first falsy value or the last value
+// let a;
+
+// a = 10 && 20;
+// a = 10 && 20 && 30;
+// a = 10 && 0 && 30;
+// a = 10 && '' && 0 && 30;
+
+// console.log(a);
+
+// const posts = ['Post One', 'Post Two'];
+// posts.length > 0 && console.log(posts[0]);
+
+// || - Will return the first truthy value or the lase value
+
+// let b;
+
+// b = 10 || 2;
+// b = 0 || 20;
+// b = 0 || null || '' || undefined;
+
+// console.log(b);
+
+// ?? - Returns the right side operand when the left is null or undefined
+
+// let c;
+
+// c = 10 ?? 20;
+// c = null ?? 20;
+// c = undefined ?? 30;
+// c = 0 ?? 30;
+
+// console.log(c);
+console;
+console.log(10 < 20 && 30 > 15 && 40 > 30);
+console.log(10 > 20 || 30 > 15);
+
+let x;
+x = 10 && 20;
+x = 10 && 20 && 30;
+x = 10 && false && 30;
+
+console.log(x);
+
+let y;
+y = 10 || 20;
+y = 0 || 20;
+y = false || null || 30;
+
+console.log(y);
+
+let c;
+c = 10 ?? 20;
+c = null ?? 20;
+c = undefined ?? 20;
+c = null ?? 0 ?? 20;
+
+console.log(c);
