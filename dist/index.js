@@ -426,7 +426,7 @@
 // auth ? console.log('Welcome to the dashboard') : null;
 
 // auth && console.log('Welcome to the dashboard');
-const age = 19;
+// const age = 19;
 
 // if (age >= 18) {
 //     console.log('You can drive a car');
