@@ -77,29 +77,94 @@
 //     console.log('Brush your teeth!');
 // }
 
-const date: Date = new Date();
-const hour: number = date.getHours();
+// const date: Date = new Date();
+// const hour: number = date.getHours();
 
-if (hour < 12) {
-    console.log('Good Morning!');
+// if (hour < 12) {
+//     console.log('Good Morning!');
     
-    if (hour === 6) {
-        console.log('Wake up!');
-    }
-} else if (hour < 18) {
-    console.log('Good Afternoon!');
-} else {
-    console.log('Good Night!');
+//     if (hour === 6) {
+//         console.log('Wake up!');
+//     }
+// } else if (hour < 18) {
+//     console.log('Good Afternoon!');
+// } else {
+//     console.log('Good Night!');
 
-    if (hour >= 20) {
-        console.log('zzzzzzz');
-    }
-}
+//     if (hour >= 20) {
+//         console.log('zzzzzzz');
+//     }
+// }
 
-if (hour >= 7 && hour < 15) {
-    console.log('It is work time!');
-}
+// if (hour >= 7 && hour < 15) {
+//     console.log('It is work time!');
+// }
 
-if (hour === 6 || hour === 20) {
-    console.log('Brush your teeth!')
-}
+// if (hour === 6 || hour === 20) {
+//     console.log('Brush your teeth!')
+// }
+
+// ===== 03 Switches ===== //
+
+// const d: Date = new Date(2022, 1, 10, 19, 0, 0);
+// const month: number = d.getMonth();
+// const hour = d.getHours();
+
+// switch(month) {
+//     case 1:
+//         console.log('It is January');
+//         break;
+//     case 2:
+//         console.log('It is February');
+//         break;
+//     case 3:
+//         console.log('It is March');
+//         break;
+//     default:
+//         console.log('It is not Jan, Feb or March.');
+// }
+
+// switch (true) {
+//     case hour < 12:
+//         console.log('Good Morning');
+//         break;
+//     case hour < 18:
+//         console.log('Good Afternoon');
+//         break;
+//     default:
+//         console.log('Good Night');
+// }
+
+// const date: Date = new Date();
+// const month: number = date.getMonth();
+// const hour: number =  date.getHours();
+// let msgMonth;
+// let msgHour;
+
+// switch (month) {
+//     case 0:
+//         msgMonth  = 'It is January';
+//         break;
+//     case 1:
+//         msgMonth = 'It is February';
+//         break;
+//     case 2:
+//         msgMonth = 'It is March'
+//         break;
+//     default:
+//         msgMonth = 'It is April';
+// }
+
+// switch(true) {
+//     case hour < 12:
+//         msgHour = 'Good Morning! Have a productive day!';
+//         break;
+//     case hour < 18:
+//         msgHour = 'Good Afternoon. I hope your day is going well!';
+//         break;
+//     default:
+//         msgHour = 'Good Evening! Get some rest sir!';
+// }
+
+// console.log(msgMonth);
+// console.log(msgHour);
