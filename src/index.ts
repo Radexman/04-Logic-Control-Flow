@@ -168,3 +168,28 @@
 
 // console.log(msgMonth);
 // console.log(msgHour);
+
+// ===== 04 The Calculator Challange ===== //
+
+// const calculationMachine = (numOne: number, numTwo: number, operator: string) => {
+//     let result;
+//     switch(operator) {
+//         case '+':
+//             result  = numOne + numTwo;
+//             break;
+//         case '-':
+//             result = numOne - numTwo;
+//             break;
+//         case '*':
+//             result = numOne * numTwo;
+//             break;
+//         case '/':
+//             result =  numOne / numTwo;
+//             break;
+//         default:
+//             result = 'Invalid input, please enter: +, -, *, /';
+//     }
+//     return result;
+// }
+
+// console.log(calculationMachine(5, 5, '+'));

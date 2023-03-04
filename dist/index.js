@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // ===== 01 If Statements ===== //
 // if (true) {
 //     console.log('This is true');
@@ -39,7 +39,7 @@
 // } else {
 //     console.log('Good Night');
 // }
-// Nested If 
+// Nested If
 // if (hour < 12) {
 //     console.log('Good Morning');
 //     if (hour === 6) {
@@ -137,3 +137,133 @@
 // }
 // console.log(msgMonth);
 // console.log(msgHour);
+
+// ===== 04 The Calculator Challange ===== //
+
+// const calculationMachine = (numOne, numTwo, operator) => {
+// 	let result;
+// 	switch (operator) {
+// 		case '+':
+// 			result = numOne + numTwo;
+// 			break;
+// 		case '-':
+// 			result = numOne - numTwo;
+// 			break;
+// 		case '*':
+// 			result = numOne * numTwo;
+// 			break;
+// 		case '/':
+// 			result = numOne / numTwo;
+// 			break;
+// 		default:
+// 			result = 'Invalid input, please enter: +, -, *, /';
+// 	}
+// 	return result;
+// };
+
+// console.log(calculationMachine(5, 5, '+'));
+// ==== 05 Truthy and Falsy ===== //
+
+// Falsy Values:
+// - false
+// - 0
+// - "" or '' (Empty string)
+// - null
+// - undefined
+// - NaN
+
+// Truthy Values:
+// - Everything else than is not falsy
+// - true
+// - '0' (0 in a string)
+// - ' ' (space in a string)
+// - 'false' (false in a string)
+// - [] (empty array)
+// - {} (empty object)
+// - function () {} (empty function)
+
+// const x = () => {};
+
+// if (x) {
+//     console.log('This is truthy');
+// } else {
+//     console.log('This is falsy')
+// }
+
+// console.log(Boolean(x));
+
+// Truthy and falsy caveats
+// const children = 3;
+
+// if (children !== undefined) {
+// 	console.log(`You have ${children} children`);
+// } else {
+// 	console.log('Please enter number of children');
+// }
+
+// Checking for empty arrays
+
+// const posts = ['Post One'];
+
+// if (posts.length !== 0) {
+// 	console.log('List Posts');
+// } else {
+// 	console.log('No Posts');
+// }
+
+// Checking for empty objects
+
+// const user = {
+//     name: 'Emilia'
+// };
+
+// if (Object.keys(user).length !== 0) {
+// 	console.log('List User');
+// } else {
+// 	console.log('No User');
+// }
+
+// Loose Equality (==)
+// console.log(false === 0)
+// console.log('' === 0)
+// console.log(null === undefined)
+
+const email = 'Borderlandsmaniak@gmail.com';
+
+if (email) {
+	console.log('You passed an email');
+} else {
+	console.log('Please enter email');
+}
+
+const name = 'Radek';
+
+console.log(!!name);
+
+const x = 'false';
+
+if (x) {
+	console.log('This is truthy');
+} else {
+	console.log('This is falsy');
+}
+
+let children = 0;
+
+if (!isNaN(children)) {
+	console.log(`You have ${children} children`);
+} else {
+	console.log('Please enter the number of children you have');
+}
+
+const arr = [];
+
+if (arr.length === 0) {
+	console.log('This array is empty');
+}
+
+const obj = {};
+
+if (Object.keys(obj).length === 0) {
+	console.log('This object is empty');
+}
